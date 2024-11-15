@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>J&S Creations Construcción, Reforma y Diseño</title>
     <link rel="stylesheet" href="style.css"> <!-- Link a estilos CSS -->
- </head>
+    <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initMap" async defer></script>
+</head>
 
 <body>
     <header>
@@ -40,33 +41,55 @@
         <section id="projects">
             <h2>Proyectos Recientes</h2>
             <p>Aquí puedes ver algunos de nuestros proyectos más recientes:</p>
-            <div>
-                <!-- Ejemplos de proyectos con imágenes -->
-                <img src="images/proyecto1.jpg" alt="Proyecto 1">
-                <img src="images/proyecto2.jpg" alt="Proyecto 2">
+            <div class="projects-gallery">
+                <img src="images/Membrana/1.jpg" alt="Membrana 1" class="project-image">
+                <img src="images/Membrana/2.jpg" alt="Membrana 2" class="project-image">
+                <img src="images/Membrana/3.jpg" alt="Membrana 3" class="project-image">
+                <img src="images/Membrana/4.jpg" alt="Membrana 4" class="project-image">
+                <img src="images/Membrana/5.jpg" alt="Membrana 5" class="project-image">
+                <img src="images/Membrana/6.jpg" alt="Membrana 6" class="project-image">
+                <img src="images/reformas integrales/1.jpg" alt="Reformas 1" class="project-image">
+                <img src="images/reformas integrales/2.jpg" alt="Reformas 2" class="project-image">
+                <img src="images/reformas integrales/3.jpg" alt="Reformas 3" class="project-image">
+                <img src="images/reformas integrales/4.jpg" alt="Reformas 4" class="project-image">
+                <img src="images/reformas integrales/5.jpg" alt="Reformas 5" class="project-image">
+                <img src="images/reformas integrales/6.jpg" alt="Reformas 6" class="project-image">
+
             </div>
         </section>
 
+        <!-- Sección de comentarios -->
+        <section id="reviews">
+            <h2>Comentarios y Reseñas</h2>
+            <div class="review">
+                <p>"Excelente servicio, muy profesionales." - Juan Pérez</p>
+                <img src="images/Electricidad/2.jpg" alt="Electricidad 2" class="project-image">
+                <img src="images/Electricidad/3.jpg" alt="Electricidad 3" class="project-image">
+            </div>
+            <div class="review">
+                <p>"Recomiendo completamente, muy satisfecha con el resultado." - María García</p>
+                <img src="images/Pintura epoxica/2.jpg" alt="Pintura 1" class="project-image">
+                <img src="images/Pintura epoxica/3.jpg" alt="Pintura 2" class="project-image">
+                <img src="images/Pintura epoxica/4.jpg" alt="Pintura 3" class="project-image">
+                <img src="images/Pintura epoxica/5.jpg" alt="Pintura 4" class="project-image">
+            </div>
+            <div class="review">
+                <p>"Gran experiencia, cumplieron con todos los plazos." - Luis Martínez</p>
+                <img src="images/reparaciones y renovaciones/2.jpg" alt="Reparaciones 1" class="project-image">
+                <img src="images/reparaciones y renovaciones/3.jpg" alt="Reparaciones 1" class="project-image">
+            </div>
+        </section>
+        
+
+        <!-- Sección de contacto y mapa -->
         <section id="contact">
             <h2>Contacto</h2>
-            <form action="https://formspree.io/f/xbljybze" method="POST">
-                <label for="name">Nombre</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Correo Electrónico</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Mensaje</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <button type="submit">Enviar</button>
-            </form>
+            <p>Para más información, visita nuestra página de contacto.</p>
+            <a href="contacto.html">Ir a la página de contacto</a>
         </section>
+        
     </main>
 
     <footer>
         <p>&copy; 2024 - J&S Creations | <a href="#contact">Contáctanos</a></p>
     </footer>
-</body>
-
-</html>
